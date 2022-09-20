@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var BackspaceBtn: UIButton!
     @IBOutlet weak var ResultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
         ResultLabel.layer.masksToBounds = true
         ResultLabel.layer.cornerRadius=15.0
         ResultLabel.layer.borderColor=UIColor.white.cgColor
+       
          
     }
 
