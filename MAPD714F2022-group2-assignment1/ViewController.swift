@@ -9,9 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ResultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        ResultLabel.sizeToFit()
+        ResultLabel.layer.borderWidth=0.5
+        ResultLabel.layer.masksToBounds = true
+        ResultLabel.layer.cornerRadius=15.0
+        ResultLabel.layer.borderColor=UIColor.white.cgColor
+         
     }
 
 
