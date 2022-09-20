@@ -19,9 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="jRd-c4-oYP">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-ik-H1F" userLabel="ResultLabel">
-                                <rect key="frame" x="16" y="70" width="361" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-ik-H1F" userLabel="ResultLabel">
+                                <rect key="frame" x="16" y="70" width="361" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.70083971088435371" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,9 +30,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YY3-ik-H1F" secondAttribute="trailing" constant="16" id="a28-aU-ahU"/>
                             <constraint firstAttribute="trailing" secondItem="jRd-c4-oYP" secondAttribute="trailing" id="b6b-7f-5Hz"/>
+                            <constraint firstItem="YY3-ik-H1F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="bjl-od-APt"/>
                             <constraint firstItem="jRd-c4-oYP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hUp-MY-kZY"/>
                             <constraint firstAttribute="bottom" secondItem="jRd-c4-oYP" secondAttribute="bottom" id="nj4-Sl-fa5"/>
+                            <constraint firstItem="YY3-ik-H1F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uWT-Iu-PMs"/>
                             <constraint firstItem="jRd-c4-oYP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ycV-2b-xI6"/>
                         </constraints>
                     </view>
