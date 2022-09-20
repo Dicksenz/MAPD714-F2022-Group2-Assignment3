@@ -26,31 +26,32 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGF-eX-iU7">
-                                <rect key="frame" x="312" y="174" width="65" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIf-VD-imK">
+                                <rect key="frame" x="309" y="197" width="65" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="delete.backward.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" weight="black"/>
-                                </state>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="delete.backward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YIf-VD-imK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ElF-Yx-xFW"/>
+                            <constraint firstItem="YIf-VD-imK" firstAttribute="top" secondItem="YY3-ik-H1F" secondAttribute="bottom" constant="79" id="U36-jG-h9B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YY3-ik-H1F" secondAttribute="trailing" constant="16" id="a28-aU-ahU"/>
                             <constraint firstAttribute="trailing" secondItem="jRd-c4-oYP" secondAttribute="trailing" id="b6b-7f-5Hz"/>
                             <constraint firstItem="YY3-ik-H1F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="bjl-od-APt"/>
                             <constraint firstItem="jRd-c4-oYP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hUp-MY-kZY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YIf-VD-imK" secondAttribute="trailing" constant="19" id="kwp-IC-WMN"/>
                             <constraint firstAttribute="bottom" secondItem="jRd-c4-oYP" secondAttribute="bottom" id="nj4-Sl-fa5"/>
                             <constraint firstItem="YY3-ik-H1F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uWT-Iu-PMs"/>
                             <constraint firstItem="jRd-c4-oYP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ycV-2b-xI6"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BackspaceBtn" destination="JGF-eX-iU7" id="CJY-AB-jLz"/>
                         <outlet property="ResultLabel" destination="YY3-ik-H1F" id="D27-YP-8tI"/>
                     </connections>
                 </viewController>
