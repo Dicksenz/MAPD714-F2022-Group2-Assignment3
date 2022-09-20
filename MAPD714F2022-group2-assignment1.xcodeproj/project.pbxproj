@@ -16,6 +16,7 @@
 		EE32E98128DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32E98028DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift */; };
 		EE32E98B28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32E98A28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift */; };
 		EE32E98D28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32E98C28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift */; };
+		EEB3ED1B28DA4C4A00B7ACC7 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EE32E98628DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD714F2022-group2-assignment1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE32E98A28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714F2022_group2_assignment1UITests.swift; sourceTree = "<group>"; };
 		EE32E98C28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714F2022_group2_assignment1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EE32E97228DA25C6003E00F1 /* Assets.xcassets */,
 				EE32E97428DA25C6003E00F1 /* LaunchScreen.storyboard */,
 				EE32E97728DA25C6003E00F1 /* Info.plist */,
+				EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */,
 			);
 			path = "MAPD714F2022-group2-assignment1";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB3ED1B28DA4C4A00B7ACC7 /* PaddingLabel.swift in Sources */,
 				EE32E96E28DA25C6003E00F1 /* ViewController.swift in Sources */,
 				EE32E96A28DA25C6003E00F1 /* AppDelegate.swift in Sources */,
 				EE32E96C28DA25C6003E00F1 /* SceneDelegate.swift in Sources */,
