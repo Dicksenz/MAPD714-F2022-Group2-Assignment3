@@ -1,9 +1,20 @@
 //
 //  ViewController.swift
 //  MAPD714F2022-group2-assignment1
-//
-//  Created by Dicksen Veloopillay on 2022-09-20.
-//
+
+// Authors
+
+// Name: Dicksen Veloopillay
+// StudentID: 301255179
+
+// Name: Mittul Bharatkumar Trivedi
+// StudentID: 301296407
+
+// Date: 2022-09-21
+
+// App description: Assignment 1 - Calculator App - Part 1 - Create the app UI.
+
+// Version of Xcode: 14.0 (14A309)
 
 import UIKit
 
