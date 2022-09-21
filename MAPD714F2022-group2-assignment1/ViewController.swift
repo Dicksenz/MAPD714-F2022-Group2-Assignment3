@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MAPD714F2022-group2-assignment1
+//  File name: MAPD714F2022-group2-assignment1
 
 // Authors
 
