@@ -24,10 +24,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var ResultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // ResultLabel will fit its text size
         ResultLabel.sizeToFit()
+        
+        // add border width to ResultLabel
         ResultLabel.layer.borderWidth=0.5
+        
+        // Mask UILabel to give rounded corners
         ResultLabel.layer.masksToBounds = true
+        
+        // add border radius to ResultLabel
         ResultLabel.layer.cornerRadius=15.0
+        
+        // add border color to ResultLabel
         ResultLabel.layer.borderColor=UIColor.white.cgColor
        
          
