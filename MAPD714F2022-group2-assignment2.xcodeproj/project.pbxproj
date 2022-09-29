@@ -13,31 +13,11 @@
 		EE32E97128DA25C6003E00F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE32E96F28DA25C6003E00F1 /* Main.storyboard */; };
 		EE32E97328DA25C6003E00F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32E97228DA25C6003E00F1 /* Assets.xcassets */; };
 		EE32E97628DA25C6003E00F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE32E97428DA25C6003E00F1 /* LaunchScreen.storyboard */; };
-		EE32E98128DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32E98028DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift */; };
-		EE32E98B28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32E98A28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift */; };
-		EE32E98D28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32E98C28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift */; };
 		EEB3ED1B28DA4C4A00B7ACC7 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EE32E97D28DA25C6003E00F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE32E95E28DA25C6003E00F1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE32E96528DA25C6003E00F1;
-			remoteInfo = "MAPD714F2022-group2-assignment1";
-		};
-		EE32E98728DA25C7003E00F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE32E95E28DA25C6003E00F1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE32E96528DA25C6003E00F1;
-			remoteInfo = "MAPD714F2022-group2-assignment1";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714F2022-group2-assignment1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714F2022-group2-assignment2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE32E96928DA25C6003E00F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE32E96B28DA25C6003E00F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE32E96D28DA25C6003E00F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,30 +25,11 @@
 		EE32E97228DA25C6003E00F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE32E97528DA25C6003E00F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE32E97728DA25C6003E00F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE32E97C28DA25C6003E00F1 /* MAPD714F2022-group2-assignment1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD714F2022-group2-assignment1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE32E98028DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714F2022_group2_assignment1Tests.swift; sourceTree = "<group>"; };
-		EE32E98628DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD714F2022-group2-assignment1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE32E98A28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714F2022_group2_assignment1UITests.swift; sourceTree = "<group>"; };
-		EE32E98C28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPD714F2022_group2_assignment1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EE32E96328DA25C6003E00F1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE32E97928DA25C6003E00F1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE32E98328DA25C7003E00F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,9 +42,7 @@
 		EE32E95D28DA25C6003E00F1 = {
 			isa = PBXGroup;
 			children = (
-				EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment1 */,
-				EE32E97F28DA25C7003E00F1 /* MAPD714F2022-group2-assignment1Tests */,
-				EE32E98928DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests */,
+				EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */,
 				EE32E96728DA25C6003E00F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,14 +50,12 @@
 		EE32E96728DA25C6003E00F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment1.app */,
-				EE32E97C28DA25C6003E00F1 /* MAPD714F2022-group2-assignment1Tests.xctest */,
-				EE32E98628DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests.xctest */,
+				EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment1 */ = {
+		EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */ = {
 			isa = PBXGroup;
 			children = (
 				EE32E96928DA25C6003E00F1 /* AppDelegate.swift */,
@@ -110,32 +67,15 @@
 				EE32E97728DA25C6003E00F1 /* Info.plist */,
 				EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */,
 			);
-			path = "MAPD714F2022-group2-assignment1";
-			sourceTree = "<group>";
-		};
-		EE32E97F28DA25C7003E00F1 /* MAPD714F2022-group2-assignment1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				EE32E98028DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift */,
-			);
-			path = "MAPD714F2022-group2-assignment1Tests";
-			sourceTree = "<group>";
-		};
-		EE32E98928DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests */ = {
-			isa = PBXGroup;
-			children = (
-				EE32E98A28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift */,
-				EE32E98C28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift */,
-			);
-			path = "MAPD714F2022-group2-assignment1UITests";
+			path = "MAPD714F2022-group2-assignment2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment1 */ = {
+		EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment1" */;
+			buildConfigurationList = EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment2" */;
 			buildPhases = (
 				EE32E96228DA25C6003E00F1 /* Sources */,
 				EE32E96328DA25C6003E00F1 /* Frameworks */,
@@ -145,46 +85,10 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD714F2022-group2-assignment1";
+			name = "MAPD714F2022-group2-assignment2";
 			productName = "MAPD714F2022-group2-assignment1";
-			productReference = EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment1.app */;
+			productReference = EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment2.app */;
 			productType = "com.apple.product-type.application";
-		};
-		EE32E97B28DA25C6003E00F1 /* MAPD714F2022-group2-assignment1Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE32E99328DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment1Tests" */;
-			buildPhases = (
-				EE32E97828DA25C6003E00F1 /* Sources */,
-				EE32E97928DA25C6003E00F1 /* Frameworks */,
-				EE32E97A28DA25C6003E00F1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE32E97E28DA25C6003E00F1 /* PBXTargetDependency */,
-			);
-			name = "MAPD714F2022-group2-assignment1Tests";
-			productName = "MAPD714F2022-group2-assignment1Tests";
-			productReference = EE32E97C28DA25C6003E00F1 /* MAPD714F2022-group2-assignment1Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EE32E98528DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE32E99628DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment1UITests" */;
-			buildPhases = (
-				EE32E98228DA25C7003E00F1 /* Sources */,
-				EE32E98328DA25C7003E00F1 /* Frameworks */,
-				EE32E98428DA25C7003E00F1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE32E98828DA25C7003E00F1 /* PBXTargetDependency */,
-			);
-			name = "MAPD714F2022-group2-assignment1UITests";
-			productName = "MAPD714F2022-group2-assignment1UITests";
-			productReference = EE32E98628DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,17 +103,9 @@
 					EE32E96528DA25C6003E00F1 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					EE32E97B28DA25C6003E00F1 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = EE32E96528DA25C6003E00F1;
-					};
-					EE32E98528DA25C7003E00F1 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = EE32E96528DA25C6003E00F1;
-					};
 				};
 			};
-			buildConfigurationList = EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment1" */;
+			buildConfigurationList = EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment1 */,
-				EE32E97B28DA25C6003E00F1 /* MAPD714F2022-group2-assignment1Tests */,
-				EE32E98528DA25C7003E00F1 /* MAPD714F2022-group2-assignment1UITests */,
+				EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */,
 			);
 		};
 /* End PBXProject section */
@@ -237,20 +131,6 @@
 				EE32E97628DA25C6003E00F1 /* LaunchScreen.storyboard in Resources */,
 				EE32E97328DA25C6003E00F1 /* Assets.xcassets in Resources */,
 				EE32E97128DA25C6003E00F1 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE32E97A28DA25C6003E00F1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE32E98428DA25C7003E00F1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,37 +148,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE32E97828DA25C6003E00F1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE32E98128DA25C7003E00F1 /* MAPD714F2022_group2_assignment1Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE32E98228DA25C7003E00F1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE32E98D28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITestsLaunchTests.swift in Sources */,
-				EE32E98B28DA25C7003E00F1 /* MAPD714F2022_group2_assignment1UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EE32E97E28DA25C6003E00F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment1 */;
-			targetProxy = EE32E97D28DA25C6003E00F1 /* PBXContainerItemProxy */;
-		};
-		EE32E98828DA25C7003E00F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment1 */;
-			targetProxy = EE32E98728DA25C7003E00F1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EE32E96F28DA25C6003E00F1 /* Main.storyboard */ = {
@@ -443,7 +293,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83L2H5L732;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MAPD714F2022-group2-assignment1/Info.plist";
+				INFOPLIST_FILE = "MAPD714F2022-group2-assignment2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -471,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83L2H5L732;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MAPD714F2022-group2-assignment1/Info.plist";
+				INFOPLIST_FILE = "MAPD714F2022-group2-assignment2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -490,86 +340,10 @@
 			};
 			name = Release;
 		};
-		EE32E99428DA25C7003E00F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83L2H5L732;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD714F2022-group2-assignment1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MAPD714F2022-group2-assignment1";
-			};
-			name = Debug;
-		};
-		EE32E99528DA25C7003E00F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83L2H5L732;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD714F2022-group2-assignment1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MAPD714F2022-group2-assignment1";
-			};
-			name = Release;
-		};
-		EE32E99728DA25C7003E00F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83L2H5L732;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MAPD714F2022-group2-assignment1";
-			};
-			name = Debug;
-		};
-		EE32E99828DA25C7003E00F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83L2H5L732;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MAPD714F2022-group2-assignment1";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment1" */ = {
+		EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE32E98E28DA25C7003E00F1 /* Debug */,
@@ -578,29 +352,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment1" */ = {
+		EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE32E99128DA25C7003E00F1 /* Debug */,
 				EE32E99228DA25C7003E00F1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE32E99328DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment1Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE32E99428DA25C7003E00F1 /* Debug */,
-				EE32E99528DA25C7003E00F1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE32E99628DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment1UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE32E99728DA25C7003E00F1 /* Debug */,
-				EE32E99828DA25C7003E00F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
