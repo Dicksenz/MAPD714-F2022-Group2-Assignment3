@@ -72,6 +72,15 @@ class ViewController: UIViewController {
             // set isFirstTimeLaunch to false after first Number button is pressed
             isFirstTimeLaunch = false;
             
+        }else{
+            if(ResultLabel.text!.count == 1 && ResultLabel.text == "0"){
+                // Replace "0" to first Number button pressed
+                ResultLabel.text = String(sender.tag)
+                
+                
+            }else{
+                ResultLabel.text = ResultLabel.text! + String(sender.tag)
+            }
         }
     }
     
