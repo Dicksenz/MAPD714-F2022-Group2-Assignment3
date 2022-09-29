@@ -54,7 +54,7 @@ class ViewController: UIViewController {
          
     }
     
-    // Function to check if button pressed is an operator then returns true or false
+    // Function to check if string value is an operator then returns true or false
     func isOperator(ch: String) -> Bool{
         return ch == "+" || ch == "-" || ch == "*" || ch == "/";
     }
