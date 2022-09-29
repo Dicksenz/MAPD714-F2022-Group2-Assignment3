@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  File name: MAPD714F2022-group2-assignment1
+//  File name: MAPD714F2022-group2-assignment2
 
 // Authors
 
@@ -12,13 +12,16 @@
 
 // Date: 2022-09-21
 
-// App description: Assignment 1 - Calculator App - Part 1 - Create the app UI.
+// App description: Assignment 2 Part 2 - Calculator App - Part 2 - Basic Calculator Functions.
 
 // Version of Xcode: 14.0 (14A309)
 
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Bool for first launch to replace "0"
+    var isFirstTimeLaunch: Bool = true
 
     // Result label
     @IBOutlet weak var ResultLabel: UILabel!
@@ -62,6 +65,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func NumberButton_Pressed(_ sender: UIButton) {
+        if(isFirstTimeLaunch){
+            // Replace "0" to first Number button pressed
+            ResultLabel.text = String(sender.tag)
+            
+            // set isFirstTimeLaunch to false after first Number button is pressed
+            isFirstTimeLaunch = false;
+            
+        }
     }
     
     
