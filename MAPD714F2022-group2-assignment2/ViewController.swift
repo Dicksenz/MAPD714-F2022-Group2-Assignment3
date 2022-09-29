@@ -58,5 +58,9 @@ class ViewController: UIViewController {
     @IBAction func EqualButton_Pressed(_ sender: UIButton) {
     }
     
+    
+    @IBAction func NumberButton_Pressed(_ sender: UIButton) {
+    }
+    
 }
 
