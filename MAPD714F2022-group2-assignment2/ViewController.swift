@@ -80,6 +80,7 @@ class ViewController: UIViewController {
              }else{
                  // remove last value from result.
                  ResultLabel.text?.removeLast()
+            
              }
              
          }
@@ -119,64 +120,57 @@ class ViewController: UIViewController {
     
     
     @IBAction func OperatorButton_Pressed(_ sender: UIButton) {
+        
+
         // Get last value of string to check if its a number then append operator at the end
         let lastString : String = String(ResultLabel.text!.suffix(1))
         
-          switch sender.tag {
-          case 12: // "+/-"
-              // Toggle plus and minus
-      
-              // Check if resultLabel contains only one value then
-              if(ResultLabel.text!.count == 1 || ResultLabel.text!.count == 2 ){
-                  ResultLabel.text = "-"+ResultLabel.text!
-                  
-              }else{
-                  
-                  if(!togglePlusMinus){
-                      // Get last value of resultLabel
-                      let lastString : String = String(ResultLabel.text!.suffix(1))
-                      
-                      // Remove last value from resultLabel
-                      ResultLabel.text!.removeLast()
-                      
-                      // Add lastString value with minus sign
-                      ResultLabel.text = ResultLabel.text! + "-" + lastString
-                      
-                      // Then set togglePlusMinus to true
-                      togglePlusMinus = true
-                      
-                  }else{
-                      // Get last value of resultLabel
-                      let lastString : String = String(ResultLabel.text!.suffix(1))
-                      ResultLabel.text!.removeLast()
-                      ResultLabel.text!.removeLast() // remove the last whitespace
-                      ResultLabel.text = ResultLabel.text! + lastString
-                      togglePlusMinus = false
-                  }
-              }
-          case 13: // "%"
-              if(Int(lastString) != nil){
-                  ResultLabel.text = ResultLabel.text! + " " + "%" + " "
-              }
-          case 14: // "/"
-              if(Int(lastString) != nil){
-                  ResultLabel.text = ResultLabel.text! + " " + "/" + " "
-              }
-          case 15: // "x"
-              if(Int(lastString) != nil){
-                  ResultLabel.text = ResultLabel.text! + " " + "*" + " "
-              }
-          case 16: // "-"
-              if(Int(lastString) != nil){
-                  ResultLabel.text = ResultLabel.text! + " " + "-" + " "
-              }
-          case 17: // "+"
-              if(Int(lastString) != nil){
-                  ResultLabel.text = ResultLabel.text! + " " + "+" + " "
-              }
-          default:
-              print("Invalid operand")
-          }
+        switch sender.tag {
+         case 12: // "+/-"
+             
+             // Toggle plus and minus
+     
+            if(Int(ResultLabel.text!) != nil){
+                let res = Int(ResultLabel.text!)! * -1
+                ResultLabel.text?.removeLast()
+                ResultLabel.text =  String(res)
+            }
+
+         case 13: // "%"
+             if(Int(lastString) != nil){
+                 
+                 ResultLabel.text = ResultLabel.text! + " " + "%" + " "
+     
+             }
+
+         case 14: // "/"
+             if(Int(lastString) != nil){
+                 ResultLabel.text = ResultLabel.text! + " " + "/" + " "
+                 
+             }
+             
+         case 15: // "x"
+             if(Int(lastString) != nil){
+                 ResultLabel.text = ResultLabel.text! + " " + "*" + " "
+                 
+             }
+             
+         case 16: // "-"
+             isFirstTimeLaunch = false;
+             if(Int(lastString) != nil){
+                 ResultLabel.text = ResultLabel.text! + " " + "-" + " "
+             }
+         
+         case 17: // "+"
+             
+             if(Int(lastString) != nil){
+                 ResultLabel.text = ResultLabel.text! + " " + "+" + " "
+                 
+             }
+
+         default:
+             print("Invalid operand")
+         }
     }
     
 }
