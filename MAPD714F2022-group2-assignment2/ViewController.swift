@@ -29,6 +29,9 @@ class ViewController: UIViewController {
     
     // Bool for first launch to replace "0"
     var isFirstTimeLaunch: Bool = true
+    
+    // Bool for plus minus toggle
+    var togglePlusMinus : Bool = false
 
     // Result label
     @IBOutlet weak var ResultLabel: UILabel!
@@ -121,8 +124,36 @@ class ViewController: UIViewController {
         
           switch sender.tag {
           case 12: // "+/-"
-              // TODO toggle plus and minus
-              ResultLabel.text = ResultLabel.text! + " " + "-" + " "
+              // Toggle plus and minus
+      
+              // Check if resultLabel contains only one value then
+              if(ResultLabel.text!.count == 1 || ResultLabel.text!.count == 2 ){
+                  ResultLabel.text = "-"+ResultLabel.text!
+                  
+              }else{
+                  
+                  if(!togglePlusMinus){
+                      // Get last value of resultLabel
+                      let lastString : String = String(ResultLabel.text!.suffix(1))
+                      
+                      // Remove last value from resultLabel
+                      ResultLabel.text!.removeLast()
+                      
+                      // Add lastString value with minus sign
+                      ResultLabel.text = ResultLabel.text! + "-" + lastString
+                      
+                      // Then set togglePlusMinus to true
+                      togglePlusMinus = true
+                      
+                  }else{
+                      // Get last value of resultLabel
+                      let lastString : String = String(ResultLabel.text!.suffix(1))
+                      ResultLabel.text!.removeLast()
+                      ResultLabel.text!.removeLast() // remove the last whitespace
+                      ResultLabel.text = ResultLabel.text! + lastString
+                      togglePlusMinus = false
+                  }
+              }
           case 13: // "%"
               if(Int(lastString) != nil){
                   ResultLabel.text = ResultLabel.text! + " " + "%" + " "
