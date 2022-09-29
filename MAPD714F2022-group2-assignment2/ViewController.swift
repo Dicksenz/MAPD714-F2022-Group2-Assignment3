@@ -64,5 +64,9 @@ class ViewController: UIViewController {
     @IBAction func NumberButton_Pressed(_ sender: UIButton) {
     }
     
+    
+    @IBAction func OperatorButton_Pressed(_ sender: UIButton) {
+    }
+    
 }
 
