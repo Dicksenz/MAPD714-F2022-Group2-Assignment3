@@ -62,6 +62,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func ClearButton_Pressed(_ sender: UIButton) {
+        // Set result label to "0"
+        ResultLabel.text = "0"
+        // Set isFirstTimeLaunch to true again.
+        isFirstTimeLaunch = true;
     }
     
     @IBAction func NumberButton_Pressed(_ sender: UIButton) {
