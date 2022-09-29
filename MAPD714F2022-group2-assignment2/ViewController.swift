@@ -116,8 +116,23 @@ class ViewController: UIViewController {
     
     
     @IBAction func OperatorButton_Pressed(_ sender: UIButton) {
-        
-        // TODO : add switch case for operators
+          switch sender.tag {
+          case 12: // "+/-"
+              // TODO toggle plus and minus
+              ResultLabel.text = ResultLabel.text! + " " + "-" + " "
+          case 13: // "%"
+              ResultLabel.text = ResultLabel.text! + " " + "%" + " "
+          case 14: // "/"
+              ResultLabel.text = ResultLabel.text! + " " + "/" + " "
+          case 15: // "x"
+              ResultLabel.text = ResultLabel.text! + " " + "*" + " "
+          case 16: // "-"
+              ResultLabel.text = ResultLabel.text! + " " + "-" + " "
+          case 17: // "+"
+              ResultLabel.text = ResultLabel.text! + " " + "+" + " "
+          default:
+              print("Invalid operand")
+          }
     }
     
 }
