@@ -14,6 +14,7 @@
 		EE32E97328DA25C6003E00F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32E97228DA25C6003E00F1 /* Assets.xcassets */; };
 		EE32E97628DA25C6003E00F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE32E97428DA25C6003E00F1 /* LaunchScreen.storyboard */; };
 		EEB3ED1B28DA4C4A00B7ACC7 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */; };
+		EEC2F7EC28E6668F008FB887 /* OperandStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC2F7EB28E6668F008FB887 /* OperandStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EE32E97528DA25C6003E00F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE32E97728DA25C6003E00F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		EEC2F7EB28E6668F008FB887 /* OperandStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperandStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				EE32E96928DA25C6003E00F1 /* AppDelegate.swift */,
 				EE32E96B28DA25C6003E00F1 /* SceneDelegate.swift */,
 				EE32E96D28DA25C6003E00F1 /* ViewController.swift */,
+				EEC2F7EB28E6668F008FB887 /* OperandStack.swift */,
 				EE32E96F28DA25C6003E00F1 /* Main.storyboard */,
 				EE32E97228DA25C6003E00F1 /* Assets.xcassets */,
 				EE32E97428DA25C6003E00F1 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				EEB3ED1B28DA4C4A00B7ACC7 /* PaddingLabel.swift in Sources */,
 				EE32E96E28DA25C6003E00F1 /* ViewController.swift in Sources */,
 				EE32E96A28DA25C6003E00F1 /* AppDelegate.swift in Sources */,
+				EEC2F7EC28E6668F008FB887 /* OperandStack.swift in Sources */,
 				EE32E96C28DA25C6003E00F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

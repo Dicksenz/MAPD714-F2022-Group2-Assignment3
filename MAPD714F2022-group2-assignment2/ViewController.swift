@@ -120,7 +120,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func OperatorButton_Pressed(_ sender: UIButton) {
-        
 
         // Get last value of string to check if its a number then append operator at the end
         let lastString : String = String(ResultLabel.text!.suffix(1))
