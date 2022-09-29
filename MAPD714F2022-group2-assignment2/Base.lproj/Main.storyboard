@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD714F2022_group2_assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD714F2022_group2_assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="jRd-c4-oYP">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-ik-H1F" userLabel="ResultLabel" customClass="PaddingLabel" customModule="MAPD714F2022_group2_assignment1" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-ik-H1F" userLabel="ResultLabel" customClass="PaddingLabel" customModule="MAPD714F2022_group2_assignment2" customModuleProvider="target">
                                 <rect key="frame" x="16" y="58" width="358" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.70083971088435371" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -353,6 +353,9 @@
                                                             </attributedString>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="DecimalPointButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uth-Kn-M1b"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kks-IZ-b2j">
                                                         <rect key="frame" x="94.666666666666686" y="0.0" width="85.333333333333314" height="102.33333333333333"/>
@@ -417,6 +420,11 @@
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="YY3-ik-H1F">
+            <size key="intrinsicContentSize" width="34.666666666666671" height="68"/>
+        </designable>
+    </designables>
     <resources>
         <image name="backgroundImage" width="210" height="426.66665649414062"/>
         <image name="delete.backward.fill" catalog="system" width="128" height="102"/>

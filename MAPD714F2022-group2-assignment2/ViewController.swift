@@ -20,8 +20,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var BackspaceBtn: UIButton!
+    // Result label
     @IBOutlet weak var ResultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +43,11 @@ class ViewController: UIViewController {
        
          
     }
+    
 
-
+    @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
