@@ -372,6 +372,9 @@
                                                             </attributedString>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="EqualButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJe-wi-hC2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

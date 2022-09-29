@@ -53,5 +53,10 @@ class ViewController: UIViewController {
     // Backspace button Action
     @IBAction func BackspaceButton_Pressed(_ sender: UIButton) {
     }
+    
+    // Equal button Action
+    @IBAction func EqualButton_Pressed(_ sender: UIButton) {
+    }
+    
 }
 
