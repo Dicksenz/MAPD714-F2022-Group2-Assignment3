@@ -116,20 +116,33 @@ class ViewController: UIViewController {
     
     
     @IBAction func OperatorButton_Pressed(_ sender: UIButton) {
+        // Get last value of string to check if its a number then append operator at the end
+        let lastString : String = String(ResultLabel.text!.suffix(1))
+        
           switch sender.tag {
           case 12: // "+/-"
               // TODO toggle plus and minus
               ResultLabel.text = ResultLabel.text! + " " + "-" + " "
           case 13: // "%"
-              ResultLabel.text = ResultLabel.text! + " " + "%" + " "
+              if(Int(lastString) != nil){
+                  ResultLabel.text = ResultLabel.text! + " " + "%" + " "
+              }
           case 14: // "/"
-              ResultLabel.text = ResultLabel.text! + " " + "/" + " "
+              if(Int(lastString) != nil){
+                  ResultLabel.text = ResultLabel.text! + " " + "/" + " "
+              }
           case 15: // "x"
-              ResultLabel.text = ResultLabel.text! + " " + "*" + " "
+              if(Int(lastString) != nil){
+                  ResultLabel.text = ResultLabel.text! + " " + "*" + " "
+              }
           case 16: // "-"
-              ResultLabel.text = ResultLabel.text! + " " + "-" + " "
+              if(Int(lastString) != nil){
+                  ResultLabel.text = ResultLabel.text! + " " + "-" + " "
+              }
           case 17: // "+"
-              ResultLabel.text = ResultLabel.text! + " " + "+" + " "
+              if(Int(lastString) != nil){
+                  ResultLabel.text = ResultLabel.text! + " " + "+" + " "
+              }
           default:
               print("Invalid operand")
           }
