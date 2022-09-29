@@ -54,7 +54,11 @@ class ViewController: UIViewController {
          
     }
     
-
+    // Function to check if button pressed is an operator then returns true or false
+    func isOperator(ch: String) -> Bool{
+        return ch == "+" || ch == "-" || ch == "*" || ch == "/";
+    }
+    
     // Decimal point button Action
     @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
         
