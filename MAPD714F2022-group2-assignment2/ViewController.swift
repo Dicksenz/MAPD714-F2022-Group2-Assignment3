@@ -45,9 +45,13 @@ class ViewController: UIViewController {
     }
     
 
+    // Decimal point button Action
     @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
         
     }
     
+    // Backspace button Action
+    @IBAction func BackspaceButton_Pressed(_ sender: UIButton) {
+    }
 }
 
