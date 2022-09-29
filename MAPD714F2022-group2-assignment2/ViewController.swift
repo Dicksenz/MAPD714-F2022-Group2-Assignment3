@@ -18,6 +18,13 @@
 
 import UIKit
 
+// "+/-" -> tag("12")
+// "%" -> tag("13")
+// "/" -> tag("14")
+// "x" -> tag("15")
+// "-" -> tag("16")
+// "+" -> tag("17")
+
 class ViewController: UIViewController {
     
     // Bool for first launch to replace "0"
