@@ -55,12 +55,27 @@ class ViewController: UIViewController {
     
     // Backspace button Action
     @IBAction func BackspaceButton_Pressed(_ sender: UIButton) {
+        
+        if(!ResultLabel.text!.isEmpty){
+             if(ResultLabel.text!.count == 1){
+                 // Set DisplayLabel text to "0" as initial display value.
+                 ResultLabel.text = "0"
+                 
+                 // Set isFirstTimeLaunch to true again.
+                 isFirstTimeLaunch = true;
+             }else{
+                 // remove last value from result.
+                 ResultLabel.text?.removeLast()
+             }
+             
+         }
     }
     
     // Equal button Action
     @IBAction func EqualButton_Pressed(_ sender: UIButton) {
     }
     
+    // Clear button Action
     @IBAction func ClearButton_Pressed(_ sender: UIButton) {
         // Set result label to "0"
         ResultLabel.text = "0"
