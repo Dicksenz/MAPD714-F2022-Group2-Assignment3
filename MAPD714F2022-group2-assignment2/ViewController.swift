@@ -38,6 +38,9 @@ class ViewController: UIViewController {
     
     // Stack for operators
     var operators = OperatorStack()
+    
+    // Global error variable
+    var error: Bool = false
 
     // Result label
     @IBOutlet weak var ResultLabel: UILabel!
@@ -199,6 +202,51 @@ class ViewController: UIViewController {
              print("Invalid operand")
          }
     }
+    
+    
+    // Function for custom operator evaluation and push result to operand stack
+    func customOperatorEvaluation(t: String) {
+        // variable for left operand
+        var a: Double
+        
+        // variable for right operand
+        var b: Double
+           
+        if (operands.isEmpty()) {
+            print("Expression error.");
+            error = true;
+            return;
+        } else {
+            b = operands.peek();
+            operands.pop();
+        }
+        if (operands.isEmpty()) {
+            print("Expression error.");
+            error = true;
+            return;
+        } else {
+            a = operands.peek();
+            operands.pop();
+        }
+           
+        // Store result
+        var r: Double = 0
+        
+        if (t == "+") {
+            r = a + b;
+        } else if (t == "-") {
+            r = a - b;
+        } else if (t == "*") {
+            r = a * b;
+        } else if(t == "/") {
+            r = a / b;
+        } else {
+            print("Operator error.");
+            error = true;
+        }
+        operands.push(r);
+    }
+       
     
 }
 
