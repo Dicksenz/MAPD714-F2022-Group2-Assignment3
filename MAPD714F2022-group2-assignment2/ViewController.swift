@@ -25,6 +25,8 @@ import UIKit
 // "-" -> tag("16")
 // "+" -> tag("17")
 
+
+
 class ViewController: UIViewController {
     
     // Bool for first launch to replace "0"
@@ -117,9 +119,7 @@ class ViewController: UIViewController {
          }
     }
     
-    // Equal button Action
-    @IBAction func EqualButton_Pressed(_ sender: UIButton) {
-    }
+
     
     // Clear button Action
     @IBAction func ClearButton_Pressed(_ sender: UIButton) {
@@ -247,6 +247,102 @@ class ViewController: UIViewController {
         operands.push(r);
     }
        
+    
+    
+    
+    // Equal button Action
+    @IBAction func EqualButton_Pressed(_ sender: UIButton) {
+        
+        // Store result label value in variable Input
+        var input: String = ResultLabel.text!
+        
+        // The tokens that make up the input
+           var tokens: [String] = input.split(separator: " ").map({ substr in String(substr) })
+           print(tokens)
+
+           var tokenLength: Int = (tokens.count)-1
+
+           for n in 0...tokenLength {
+               var nextToken: String = tokens[n];
+               // var ch: Character = nextToken.charAt(at: 0)
+               var ch: String = nextToken
+               
+     
+
+               if (Double(ch) != nil) {
+                  
+
+                   var value: Double = Double(ch)!
+
+                   operands.push(value);
+                   
+               }
+               else if (isOperator(ch: ch)) {
+                   if (operators.isEmpty() || getOperatorPrecedence(ch: ch) > getOperatorPrecedence(ch: operators.peek())) {
+                       operators.push(ch);
+                   }
+                   else {
+                       while (!operators.isEmpty() && getOperatorPrecedence(ch: ch) <= getOperatorPrecedence(ch: operators.peek())) {
+                           
+                           var toProcess: String = operators.peek();
+                           operators.pop();
+                           customOperatorEvaluation(t: toProcess);
+                       }
+                       operators.push(ch);
+                   }
+               }
+               else if (ch == "(") {
+                   operators.push(ch);
+               } else if (ch == ")") {
+                   while (!operators.isEmpty() && isOperator(ch: operators.peek())) {
+                        var toProcess: String = operators.peek();
+                       operators.pop();
+                       customOperatorEvaluation(t: toProcess);
+                   }
+                   if (!operators.isEmpty() && operators.peek() == "(") {
+                       operators.pop();
+                   } else {
+                       print("Error: unbalanced parenthesis.");
+                       error = true;
+                   }
+               }
+           }
+
+       
+
+           // // Empty out the operator stack at the end of the input
+           while (!operators.isEmpty() && isOperator(ch: operators.peek())) {
+                var toProcess: String = operators.peek();
+               operators.pop();
+               customOperatorEvaluation(t: toProcess);
+           }
+           // Print the result if no error has been seen.
+           if (error == false) {
+               var result: Double = operands.peek();
+               operands.pop();
+               if (!operators.isEmpty() || !operands.isEmpty()) {
+                   print("Expression result error.");
+               } else {
+                   // Show final result in result label
+                   let isInteger = floor(result) == result
+                  
+                 
+                   // Round result to 8 decimal places
+                   result = round(result * 100000000) / 100000000.0
+                  
+                   
+                   // check if result is an integer
+                   if(isInteger){
+                       ResultLabel.text = String(Int(result))
+                   }else{
+                       ResultLabel.text = String(result)
+                   }
+                   
+                   
+                   print("The result is " + String(result));
+               }
+           }
+    }
     
 }
 
