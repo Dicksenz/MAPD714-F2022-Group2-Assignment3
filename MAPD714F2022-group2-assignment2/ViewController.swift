@@ -32,6 +32,12 @@ class ViewController: UIViewController {
     
     // Bool for plus minus toggle
     var togglePlusMinus : Bool = false
+    
+    // Stack for operands
+    var operands = OperandStack()
+    
+    // Stack for operators
+    var operators = OperatorStack()
 
     // Result label
     @IBOutlet weak var ResultLabel: UILabel!
