@@ -68,11 +68,22 @@ class ViewController: UIViewController {
         return ch == "+" || ch == "-" || ch == "*" || ch == "/";
     }
     
+    // Function to get operator precedence
+    func getOperatorPrecedence(ch: String) -> Int {
+        // Using BODMASS Divide and Multiplication can higher precedence
+        if (ch == "+" || ch == "-") {
+            return 1;
+        }
+        if (ch == "*" || ch == "/") {
+            return 2;
+        }
+            return 0;
+    }
+    
+    
     // Decimal point button Action
     @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
-        
-        
-        
+ 
         if(!(ResultLabel.text?.contains("."))!){
             ResultLabel.text = ResultLabel.text! + "."
         }
