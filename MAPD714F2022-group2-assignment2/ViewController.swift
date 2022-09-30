@@ -71,6 +71,17 @@ class ViewController: UIViewController {
     // Decimal point button Action
     @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
         
+        
+        
+        if(!(ResultLabel.text?.contains("."))!){
+            ResultLabel.text = ResultLabel.text! + "."
+        }
+        let index = ResultLabel.text!.index(ResultLabel.text!.startIndex, offsetBy: ResultLabel.text!.count-2)
+        print(ResultLabel.text![index])
+        if(ResultLabel.text![index] == " "){
+            
+            ResultLabel.text = ResultLabel.text! + "."
+        }
     }
     
     // Backspace button Action
