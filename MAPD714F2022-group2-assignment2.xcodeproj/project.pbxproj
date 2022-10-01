@@ -16,6 +16,7 @@
 		EEB3ED1B28DA4C4A00B7ACC7 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */; };
 		EEC2F7EC28E6668F008FB887 /* OperandStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC2F7EB28E6668F008FB887 /* OperandStack.swift */; };
 		EEC2F7EE28E667A2008FB887 /* OperatorStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC2F7ED28E667A2008FB887 /* OperatorStack.swift */; };
+		EEC2F7F028E68EAF008FB887 /* GlobalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC2F7EF28E68EAF008FB887 /* GlobalStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		EEC2F7EB28E6668F008FB887 /* OperandStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperandStack.swift; sourceTree = "<group>"; };
 		EEC2F7ED28E667A2008FB887 /* OperatorStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorStack.swift; sourceTree = "<group>"; };
+		EEC2F7EF28E68EAF008FB887 /* GlobalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				EE32E96D28DA25C6003E00F1 /* ViewController.swift */,
 				EEC2F7EB28E6668F008FB887 /* OperandStack.swift */,
 				EEC2F7ED28E667A2008FB887 /* OperatorStack.swift */,
+				EEC2F7EF28E68EAF008FB887 /* GlobalStack.swift */,
 				EE32E96F28DA25C6003E00F1 /* Main.storyboard */,
 				EE32E97228DA25C6003E00F1 /* Assets.xcassets */,
 				EE32E97428DA25C6003E00F1 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				EE32E96E28DA25C6003E00F1 /* ViewController.swift in Sources */,
 				EE32E96A28DA25C6003E00F1 /* AppDelegate.swift in Sources */,
 				EEC2F7EC28E6668F008FB887 /* OperandStack.swift in Sources */,
+				EEC2F7F028E68EAF008FB887 /* GlobalStack.swift in Sources */,
 				EEC2F7EE28E667A2008FB887 /* OperatorStack.swift in Sources */,
 				EE32E96C28DA25C6003E00F1 /* SceneDelegate.swift in Sources */,
 			);

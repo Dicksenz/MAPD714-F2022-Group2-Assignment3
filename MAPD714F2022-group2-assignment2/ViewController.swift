@@ -41,6 +41,9 @@ class ViewController: UIViewController {
     // Stack for operators
     var operators = OperatorStack()
     
+    // Global stack to keep track of values entered
+    var globalStack = GlobalStack()
+    
     // Global error variable
     var error: Bool = false
 
@@ -75,7 +78,7 @@ class ViewController: UIViewController {
     
     // Function to get operator precedence
     func getOperatorPrecedence(ch: String) -> Int {
-        // Using BODMASS Divide and Multiplication can higher precedence
+        // Check precedence
         if (ch == "+" || ch == "-") {
             return 1;
         }
@@ -84,6 +87,7 @@ class ViewController: UIViewController {
         }
             return 0;
     }
+    
     
     
     // Decimal point button Action
@@ -136,15 +140,80 @@ class ViewController: UIViewController {
             
             // set isFirstTimeLaunch to false after first Number button is pressed
             isFirstTimeLaunch = false;
+            var input: String = ResultLabel.text!
+            
+            // The tokens that make up the input
+            var tokens: [String] = input.split(separator: " ").map({ substr in String(substr) })
+            var tokenLength: Int = (tokens.count)-1
+            for n in 0...tokenLength {
+                var nextToken: String = tokens[n];
+                // var ch: Character = nextToken.charAt(at: 0)
+                var ch: String = nextToken
+                
+                
+                
+                if (Double(ch) != nil) {
+                    
+                    
+                    var value: Double = Double(ch)!
+                    
+                    globalStack.push(String(value));
+                    
+                }
+            }
             
         }else{
             if(ResultLabel.text!.count == 1 && ResultLabel.text == "0"){
                 // Replace "0" to first Number button pressed
                 ResultLabel.text = String(sender.tag)
+                var input: String = ResultLabel.text!
+                
+                // The tokens that make up the input
+                var tokens: [String] = input.split(separator: " ").map({ substr in String(substr) })
+                var tokenLength: Int = (tokens.count)-1
+                for n in 0...tokenLength {
+                    var nextToken: String = tokens[n];
+                    // var ch: Character = nextToken.charAt(at: 0)
+                    var ch: String = nextToken
+                    
+                    
+                    
+                    if (Double(ch) != nil) {
+                        
+                        
+                        var value: Double = Double(ch)!
+                        
+                        globalStack.push(String(value));
+                        
+                    }
+                }
                 
                 
             }else{
                 ResultLabel.text = ResultLabel.text! + String(sender.tag)
+                // Store result label value in variable Input
+                var input: String = ResultLabel.text!
+                
+                // The tokens that make up the input
+                var tokens: [String] = input.split(separator: " ").map({ substr in String(substr) })
+                var tokenLength: Int = (tokens.count)-1
+                for n in 0...tokenLength {
+                    var nextToken: String = tokens[n];
+                    // var ch: Character = nextToken.charAt(at: 0)
+                    var ch: String = nextToken
+                    
+                    
+                    
+                    if (Double(ch) != nil) {
+                        
+                        
+                        var value: Double = Double(ch)!
+                        
+                        globalStack.push(String(value));
+                        
+                    }
+                }
+                
             }
         }
     }
@@ -167,11 +236,29 @@ class ViewController: UIViewController {
             }
 
          case 13: // "%"
-             if(Int(lastString) != nil){
-                 
-                 ResultLabel.text = ResultLabel.text! + " " + "%" + " "
-     
-             }
+            
+            let lastValue: String = globalStack.peek()
+            
+            let lastValueToDouble = Double(lastValue)
+            
+            let isInteger = floor(lastValueToDouble!) == lastValueToDouble
+            
+            print(lastValue)
+            
+            let value = Double(lastValue)! / 100
+            print(value)
+            
+            
+            // keep removing last character till whitespace is found
+            for char in ResultLabel.text!.reversed(){
+                if(char != " "){
+                    ResultLabel.text!.removeLast()
+                }else{
+                    break
+                }
+            }
+            // append new value
+            ResultLabel.text = ResultLabel.text! + String(value)
 
          case 14: // "/"
              if(Int(lastString) != nil){
@@ -252,6 +339,7 @@ class ViewController: UIViewController {
     
     // Equal button Action
     @IBAction func EqualButton_Pressed(_ sender: UIButton) {
+    
         
         // Store result label value in variable Input
         var input: String = ResultLabel.text!
@@ -338,8 +426,7 @@ class ViewController: UIViewController {
                        ResultLabel.text = String(result)
                    }
                    
-                   
-                   print("The result is " + String(result));
+           
                }
            }
     }
