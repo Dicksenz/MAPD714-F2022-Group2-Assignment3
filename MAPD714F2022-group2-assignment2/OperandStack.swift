@@ -1,10 +1,20 @@
 //
 //  OperandStack.swift
-//  MAPD714F2022-group2-assignment2
-//
-//  Created by Dicksen Veloopillay on 2022-09-29.
-//
+//  File name: MAPD714F2022-group2-assignment2
 
+// Authors
+
+// Name: Dicksen Veloopillay
+// StudentID: 301255179
+
+// Name: Mittul Bharatkumar Trivedi
+// StudentID: 301296407
+
+// Date: 2022-10-01
+
+// App description: Assignment 2 Part 2 - Calculator App - Part 2 - Basic Calculator Functions.
+
+// Version of Xcode: 14.0 (14A309)
 import Foundation
 
 // This is my operand stack

@@ -1,12 +1,23 @@
 //
 //  GlobalStack.swift
-//  MAPD714F2022-group2-assignment2
-//
-//  Created by Dicksen Veloopillay on 2022-09-29.
-//
+//  File name: MAPD714F2022-group2-assignment2
 
+// Authors
+
+// Name: Dicksen Veloopillay
+// StudentID: 301255179
+
+// Name: Mittul Bharatkumar Trivedi
+// StudentID: 301296407
+
+// Date: 2022-10-01
+
+// App description: Assignment 2 Part 2 - Calculator App - Part 2 - Basic Calculator Functions.
+
+// Version of Xcode: 14.0 (14A309)
 import Foundation
 
+// This is a GlobalStack to keep track of current operand only
 struct GlobalStack {
 
     private var items: [String] = []
@@ -26,9 +37,8 @@ struct GlobalStack {
         items.insert(element, at: 0)
     }
 
+    // Check if stack is empty or not
      func isEmpty() -> Bool{
-
-         
          if(items.isEmpty){
              return true
 

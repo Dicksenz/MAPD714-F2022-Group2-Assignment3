@@ -16,6 +16,11 @@
 
 // Version of Xcode: 14.0 (14A309)
 
+
+// We have used Swift Data Structures: Stack for the calculator logic
+// An Operand stack to store and keep track of operands
+// An Operator stack to store and keep track of operators in order to check for precedence
+
 import UIKit
 
 // "+/-" -> tag("12")
@@ -338,25 +343,25 @@ class ViewController: UIViewController {
     
         
         // Store result label value in variable Input
-        var input: String = ResultLabel.text!
+        let input: String = ResultLabel.text!
         
         // The tokens that make up the input
-           var tokens: [String] = input.split(separator: " ").map({ substr in String(substr) })
+        let tokens: [String] = input.split(separator: " ").map({ substr in String(substr) })
            print(tokens)
 
-           var tokenLength: Int = (tokens.count)-1
+        let tokenLength: Int = (tokens.count)-1
 
            for n in 0...tokenLength {
-               var nextToken: String = tokens[n];
+               let nextToken: String = tokens[n];
                // var ch: Character = nextToken.charAt(at: 0)
-               var ch: String = nextToken
+               let ch: String = nextToken
                
      
 
                if (Double(ch) != nil) {
                   
 
-                   var value: Double = Double(ch)!
+                   let value: Double = Double(ch)!
 
                    operands.push(value);
                    
@@ -368,7 +373,7 @@ class ViewController: UIViewController {
                    else {
                        while (!operators.isEmpty() && getOperatorPrecedence(ch: ch) <= getOperatorPrecedence(ch: operators.peek())) {
                            
-                           var toProcess: String = operators.peek();
+                           let toProcess: String = operators.peek();
                            operators.pop();
                            customOperatorEvaluation(t: toProcess);
                        }
@@ -379,7 +384,7 @@ class ViewController: UIViewController {
                    operators.push(ch);
                } else if (ch == ")") {
                    while (!operators.isEmpty() && isOperator(ch: operators.peek())) {
-                        var toProcess: String = operators.peek();
+                       let toProcess: String = operators.peek();
                        operators.pop();
                        customOperatorEvaluation(t: toProcess);
                    }
@@ -396,7 +401,7 @@ class ViewController: UIViewController {
 
            // // Empty out the operator stack at the end of the input
            while (!operators.isEmpty() && isOperator(ch: operators.peek())) {
-                var toProcess: String = operators.peek();
+               let toProcess: String = operators.peek();
                operators.pop();
                customOperatorEvaluation(t: toProcess);
            }
