@@ -230,10 +230,13 @@ class ViewController: UIViewController {
 
          case 13: // "%"
             
+            // Get lastvalue in global stack
             let lastValue: String = globalStack.peek()
             
+            // Convert value to double
             let lastValueToDouble = Double(lastValue)
             
+            // Check if it is an integer
             let isInteger = floor(lastValueToDouble!) == lastValueToDouble
             
             print(lastValue)
