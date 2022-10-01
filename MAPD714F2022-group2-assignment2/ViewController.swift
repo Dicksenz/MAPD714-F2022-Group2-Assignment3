@@ -10,7 +10,7 @@
 // Name: Mittul Bharatkumar Trivedi
 // StudentID: 301296407
 
-// Date: 2022-09-21
+// Date: 2022-10-01
 
 // App description: Assignment 2 Part 2 - Calculator App - Part 2 - Basic Calculator Functions.
 
@@ -93,9 +93,12 @@ class ViewController: UIViewController {
     // Decimal point button Action
     @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
  
+        // Check if resultLabel does not contain "."
         if(!(ResultLabel.text?.contains("."))!){
             ResultLabel.text = ResultLabel.text! + "."
         }
+        
+        // Check for whitepace before operand then add "."
         let index = ResultLabel.text!.index(ResultLabel.text!.startIndex, offsetBy: ResultLabel.text!.count-2)
         print(ResultLabel.text![index])
         if(ResultLabel.text![index] == " "){
@@ -149,14 +152,11 @@ class ViewController: UIViewController {
                 var nextToken: String = tokens[n];
                 // var ch: Character = nextToken.charAt(at: 0)
                 var ch: String = nextToken
-                
-                
-                
+         
                 if (Double(ch) != nil) {
-                    
-                    
                     var value: Double = Double(ch)!
-                    
+        
+                    // Add to global stack to keep track of current operand
                     globalStack.push(String(value));
                     
                 }
@@ -175,12 +175,7 @@ class ViewController: UIViewController {
                     var nextToken: String = tokens[n];
                     // var ch: Character = nextToken.charAt(at: 0)
                     var ch: String = nextToken
-                    
-                    
-                    
                     if (Double(ch) != nil) {
-                        
-                        
                         var value: Double = Double(ch)!
                         
                         globalStack.push(String(value));
@@ -201,9 +196,6 @@ class ViewController: UIViewController {
                     var nextToken: String = tokens[n];
                     // var ch: Character = nextToken.charAt(at: 0)
                     var ch: String = nextToken
-                    
-                    
-                    
                     if (Double(ch) != nil) {
                         
                         
@@ -229,6 +221,7 @@ class ViewController: UIViewController {
              
              // Toggle plus and minus
      
+            // Check if value is a number before toggle plus minus
             if(Int(ResultLabel.text!) != nil){
                 let res = Int(ResultLabel.text!)! * -1
                 ResultLabel.text?.removeLast()
