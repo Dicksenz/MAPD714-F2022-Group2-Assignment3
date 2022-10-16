@@ -746,7 +746,7 @@
                                                     <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lgS-YO-VCy"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-cG-trE">
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-cG-trE">
                                                 <rect key="frame" x="683.33333333333337" y="0.0" width="160.66666666666663" height="44.333333333333336"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
