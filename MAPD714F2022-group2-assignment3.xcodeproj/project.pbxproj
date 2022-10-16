@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714F2022-group2-assignment2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714F2022-group2-assignment3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE32E96928DA25C6003E00F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE32E96B28DA25C6003E00F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE32E96D28DA25C6003E00F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		EE32E95D28DA25C6003E00F1 = {
 			isa = PBXGroup;
 			children = (
-				EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */,
+				EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment3 */,
 				EE32E96728DA25C6003E00F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		EE32E96728DA25C6003E00F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment2.app */,
+				EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */ = {
+		EE32E96828DA25C6003E00F1 /* MAPD714F2022-group2-assignment3 */ = {
 			isa = PBXGroup;
 			children = (
 				EE32E96928DA25C6003E00F1 /* AppDelegate.swift */,
@@ -76,15 +76,15 @@
 				EE32E97728DA25C6003E00F1 /* Info.plist */,
 				EEB3ED1A28DA4C4A00B7ACC7 /* PaddingLabel.swift */,
 			);
-			path = "MAPD714F2022-group2-assignment2";
+			path = "MAPD714F2022-group2-assignment3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */ = {
+		EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment2" */;
+			buildConfigurationList = EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment3" */;
 			buildPhases = (
 				EE32E96228DA25C6003E00F1 /* Sources */,
 				EE32E96328DA25C6003E00F1 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD714F2022-group2-assignment2";
+			name = "MAPD714F2022-group2-assignment3";
 			productName = "MAPD714F2022-group2-assignment1";
-			productReference = EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment2.app */;
+			productReference = EE32E96628DA25C6003E00F1 /* MAPD714F2022-group2-assignment3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment2" */;
+			buildConfigurationList = EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment3" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment2 */,
+				EE32E96528DA25C6003E00F1 /* MAPD714F2022-group2-assignment3 */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +305,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83L2H5L732;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MAPD714F2022-group2-assignment2/Info.plist";
+				INFOPLIST_FILE = "MAPD714F2022-group2-assignment3/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83L2H5L732;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MAPD714F2022-group2-assignment2/Info.plist";
+				INFOPLIST_FILE = "MAPD714F2022-group2-assignment3/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -344,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tutorial.MAPD714F2022-group2-assignment3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -355,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment2" */ = {
+		EE32E96128DA25C6003E00F1 /* Build configuration list for PBXProject "MAPD714F2022-group2-assignment3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE32E98E28DA25C7003E00F1 /* Debug */,
@@ -364,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment2" */ = {
+		EE32E99028DA25C7003E00F1 /* Build configuration list for PBXNativeTarget "MAPD714F2022-group2-assignment3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE32E99128DA25C7003E00F1 /* Debug */,
