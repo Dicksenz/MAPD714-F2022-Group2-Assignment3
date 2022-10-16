@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD714F2022_group2_assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="jRd-c4-oYP">
-                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro1-0k-VM0" userLabel="ResultLabelLandscape" customClass="PaddingLabel" customModule="MAPD714F2022_group2_assignment3" customModuleProvider="target">
-                                <rect key="frame" x="50" y="25" width="774" height="48"/>
+                                <rect key="frame" x="50" y="15" width="774" height="58"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70400455298013243" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -604,6 +604,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6Z-da-oqN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tB-BU-d62">
                                                 <rect key="frame" x="341.66666666666669" y="0.0" width="160.66666666666669" height="44.666666666666664"/>
@@ -620,6 +623,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5vr-Lz-6fb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIo-CN-gzY">
                                                 <rect key="frame" x="512.33333333333337" y="0.0" width="161" height="44.666666666666664"/>
@@ -636,6 +642,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQX-kk-Qsu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufb-vM-SOf">
                                                 <rect key="frame" x="683.33333333333337" y="0.0" width="160.66666666666663" height="44.666666666666664"/>
@@ -695,6 +704,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iFI-Zv-ctO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTv-Db-t0N">
                                                 <rect key="frame" x="341.66666666666669" y="0.0" width="160.66666666666669" height="44.333333333333336"/>
@@ -711,6 +723,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5qt-ap-Z9X"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-yw-c6A">
                                                 <rect key="frame" x="512.33333333333337" y="0.0" width="161" height="44.333333333333336"/>
@@ -727,6 +742,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lgS-YO-VCy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-cG-trE">
                                                 <rect key="frame" x="683.33333333333337" y="0.0" width="160.66666666666663" height="44.333333333333336"/>
@@ -786,6 +804,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfy-jK-c74"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfY-up-EbK">
                                                 <rect key="frame" x="341.66666666666669" y="0.0" width="160.66666666666669" height="44.666666666666664"/>
@@ -802,6 +823,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="znK-GY-lhE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKb-pE-2X0">
                                                 <rect key="frame" x="512.33333333333337" y="0.0" width="161" height="44.666666666666664"/>
@@ -818,6 +842,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmn-kl-5d9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grx-UV-e2t">
                                                 <rect key="frame" x="683.33333333333337" y="0.0" width="160.66666666666663" height="44.666666666666664"/>
@@ -877,6 +904,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="NumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFV-S5-S9D"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTm-Ri-pny">
                                                 <rect key="frame" x="341.66666666666669" y="0.0" width="160.66666666666669" height="44.666666666666664"/>
@@ -893,6 +923,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="DecimalPointButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dmx-MT-AgD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mC-sQ-MyS">
                                                 <rect key="frame" x="512.33333333333337" y="0.0" width="161" height="44.666666666666664"/>
@@ -921,6 +954,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="EqualButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DmN-BP-9L1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -963,13 +999,15 @@
                                 <exclude reference="jUy-qC-Shq"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="7xH-1G-FIg"/>
+                                <exclude reference="tS7-OU-9rg"/>
                                 <exclude reference="bjl-od-APt"/>
                                 <exclude reference="uWT-Iu-PMs"/>
+                                <exclude reference="3qR-9r-pyj"/>
+                                <exclude reference="gyd-tx-KzT"/>
                                 <exclude reference="abQ-sp-Bva"/>
                                 <exclude reference="fN8-pY-ee1"/>
                                 <exclude reference="pGU-Vs-zT4"/>
-                                <exclude reference="4Nr-qF-Fgy"/>
-                                <exclude reference="ehI-pc-kYR"/>
                                 <exclude reference="HXC-bp-Fzy"/>
                                 <exclude reference="RHf-nt-2Rh"/>
                                 <exclude reference="Urm-nW-4cM"/>
@@ -978,10 +1016,8 @@
                                 <exclude reference="dt1-At-2aI"/>
                                 <exclude reference="ebT-O1-YtE"/>
                                 <exclude reference="jjV-oR-waE"/>
-                                <exclude reference="7xH-1G-FIg"/>
-                                <exclude reference="tS7-OU-9rg"/>
-                                <exclude reference="3qR-9r-pyj"/>
-                                <exclude reference="gyd-tx-KzT"/>
+                                <exclude reference="4Nr-qF-Fgy"/>
+                                <exclude reference="ehI-pc-kYR"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -990,13 +1026,13 @@
                                 <include reference="jUy-qC-Shq"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="HXC-bp-Fzy"/>
-                                <include reference="dt1-At-2aI"/>
-                                <include reference="ebT-O1-YtE"/>
                                 <include reference="7xH-1G-FIg"/>
                                 <include reference="tS7-OU-9rg"/>
                                 <include reference="3qR-9r-pyj"/>
                                 <include reference="gyd-tx-KzT"/>
+                                <include reference="HXC-bp-Fzy"/>
+                                <include reference="dt1-At-2aI"/>
+                                <include reference="ebT-O1-YtE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1011,13 +1047,13 @@
                                 <include reference="abQ-sp-Bva"/>
                                 <include reference="fN8-pY-ee1"/>
                                 <include reference="pGU-Vs-zT4"/>
-                                <include reference="4Nr-qF-Fgy"/>
-                                <include reference="ehI-pc-kYR"/>
                                 <include reference="RHf-nt-2Rh"/>
                                 <include reference="Urm-nW-4cM"/>
                                 <include reference="a28-aU-ahU"/>
                                 <include reference="doW-kB-Qmm"/>
                                 <include reference="jjV-oR-waE"/>
+                                <include reference="4Nr-qF-Fgy"/>
+                                <include reference="ehI-pc-kYR"/>
                             </mask>
                         </variation>
                     </view>
@@ -1032,8 +1068,11 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="Ro1-0k-VM0">
+            <size key="intrinsicContentSize" width="34.666666666666671" height="58"/>
+        </designable>
         <designable name="YY3-ik-H1F">
-            <size key="intrinsicContentSize" width="24.666666666666668" height="48"/>
+            <size key="intrinsicContentSize" width="34.666666666666671" height="68"/>
         </designable>
     </designables>
     <resources>
