@@ -469,6 +469,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="403-a4-4P4"/>
                                 <exclude reference="hJv-U3-XmK"/>
                             </mask>
                             <mask key="constraints">
@@ -488,6 +489,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="403-a4-4P4"/>
                                 <include reference="hJv-U3-XmK"/>
                             </mask>
                             <mask key="constraints">
