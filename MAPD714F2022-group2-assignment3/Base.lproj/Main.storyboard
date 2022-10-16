@@ -468,6 +468,9 @@
                             <constraint firstItem="jRd-c4-oYP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ycV-2b-xI6"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hJv-U3-XmK"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="RHf-nt-2Rh"/>
                                 <exclude reference="Urm-nW-4cM"/>
@@ -484,6 +487,9 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hJv-U3-XmK"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="RHf-nt-2Rh"/>
                                 <include reference="Urm-nW-4cM"/>
