@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD714F2022_group2_assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD714F2022_group2_assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="jRd-c4-oYP">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-ik-H1F" userLabel="ResultLabel" customClass="PaddingLabel" customModule="MAPD714F2022_group2_assignment2" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-ik-H1F" userLabel="ResultLabel" customClass="PaddingLabel" customModule="MAPD714F2022_group2_assignment3" customModuleProvider="target">
                                 <rect key="frame" x="16" y="58" width="358" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.70083971088435371" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -467,6 +467,38 @@
                             <constraint firstItem="YY3-ik-H1F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uWT-Iu-PMs"/>
                             <constraint firstItem="jRd-c4-oYP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ycV-2b-xI6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RHf-nt-2Rh"/>
+                                <exclude reference="Urm-nW-4cM"/>
+                                <exclude reference="a28-aU-ahU"/>
+                                <exclude reference="doW-kB-Qmm"/>
+                                <exclude reference="jjV-oR-waE"/>
+                                <exclude reference="bjl-od-APt"/>
+                                <exclude reference="uWT-Iu-PMs"/>
+                                <exclude reference="4Nr-qF-Fgy"/>
+                                <exclude reference="ehI-pc-kYR"/>
+                                <exclude reference="abQ-sp-Bva"/>
+                                <exclude reference="fN8-pY-ee1"/>
+                                <exclude reference="pGU-Vs-zT4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="RHf-nt-2Rh"/>
+                                <include reference="Urm-nW-4cM"/>
+                                <include reference="a28-aU-ahU"/>
+                                <include reference="doW-kB-Qmm"/>
+                                <include reference="jjV-oR-waE"/>
+                                <include reference="bjl-od-APt"/>
+                                <include reference="uWT-Iu-PMs"/>
+                                <include reference="4Nr-qF-Fgy"/>
+                                <include reference="ehI-pc-kYR"/>
+                                <include reference="abQ-sp-Bva"/>
+                                <include reference="fN8-pY-ee1"/>
+                                <include reference="pGU-Vs-zT4"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="ResultLabel" destination="YY3-ik-H1F" id="D27-YP-8tI"/>
