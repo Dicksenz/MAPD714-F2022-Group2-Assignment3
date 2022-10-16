@@ -152,6 +152,9 @@ class ViewController: UIViewController {
     @IBAction func ClearButton_Pressed(_ sender: UIButton) {
         // Set result label to "0"
         ResultLabel.text = "0"
+        
+        // Set result label landscape mode to "0"
+        ResultLabelLandscape.text = "0"
         // Set isFirstTimeLaunch to true again.
         isFirstTimeLaunch = true;
     }
@@ -160,6 +163,7 @@ class ViewController: UIViewController {
         if(isFirstTimeLaunch){
             // Replace "0" to first Number button pressed
             ResultLabel.text = String(sender.tag)
+            ResultLabelLandscape.text = String(sender.tag)
             
             // set isFirstTimeLaunch to false after first Number button is pressed
             isFirstTimeLaunch = false;
