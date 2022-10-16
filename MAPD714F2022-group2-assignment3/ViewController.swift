@@ -55,24 +55,39 @@ class ViewController: UIViewController {
     // Result label
     @IBOutlet weak var ResultLabel: UILabel!
     
+    @IBOutlet weak var ResultLabelLandscape: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // ResultLabel will fit its text size
         ResultLabel.sizeToFit()
         
+        //ResultLabel landscape mode
+        ResultLabelLandscape.sizeToFit()
+        
         // add border width to ResultLabel
         ResultLabel.layer.borderWidth=0.5
+        
+        // ResultLabel landscape mode
+        ResultLabelLandscape.layer.borderWidth=0.5
         
         // Mask UILabel to give rounded corners
         ResultLabel.layer.masksToBounds = true
         
+        // ResultLabel landscape mode
+        ResultLabelLandscape.layer.masksToBounds = true
+        
         // add border radius to ResultLabel
         ResultLabel.layer.cornerRadius=15.0
+        
+        // ResultLabel landscape mode
+        ResultLabelLandscape.layer.cornerRadius=15.0
         
         // add border color to ResultLabel
         ResultLabel.layer.borderColor=UIColor.white.cgColor
        
+        // ResultLabel landscape mode
+        ResultLabelLandscape.layer.borderColor=UIColor.white.cgColor
          
     }
     
