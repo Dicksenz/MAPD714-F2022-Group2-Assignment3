@@ -117,38 +117,81 @@ class ViewController: UIViewController {
     
     // Decimal point button Action
     @IBAction func DecimalPointButton_Pressed(_ sender: UIButton) {
- 
-        // Check if resultLabel does not contain "."
-        if(!(ResultLabel.text?.contains("."))!){
-            ResultLabel.text = ResultLabel.text! + "."
-        }
-        
-        // Check for whitepace before operand then add "."
-        let index = ResultLabel.text!.index(ResultLabel.text!.startIndex, offsetBy: ResultLabel.text!.count-2)
-        print(ResultLabel.text![index])
-        if(ResultLabel.text![index] == " "){
+        if(UIDevice.current.orientation.isPortrait){
+            // Check if resultLabel does not contain "."
+            if(!(ResultLabel.text?.contains("."))!){
+                ResultLabel.text = ResultLabel.text! + "."
+            }
             
-            ResultLabel.text = ResultLabel.text! + "."
+            // Check for whitepace before operand then add "."
+            let index = ResultLabel.text!.index(ResultLabel.text!.startIndex, offsetBy: ResultLabel.text!.count-2)
+            print(ResultLabel.text![index])
+            if(ResultLabel.text![index] == " "){
+                
+                ResultLabel.text = ResultLabel.text! + "."
+            }
+            
         }
+        else{
+            // Check if ResultLabelLandscape does not contain "."
+            if(!(ResultLabelLandscape.text?.contains("."))!){
+                ResultLabelLandscape.text = ResultLabel.text! + "."
+            }
+            
+            // Check for whitepace before operand then add "."
+            let index = ResultLabelLandscape.text!.index(ResultLabelLandscape.text!.startIndex, offsetBy: ResultLabel.text!.count-2)
+            print(ResultLabelLandscape.text![index])
+            if(ResultLabelLandscape.text![index] == " "){
+                
+                ResultLabelLandscape.text = ResultLabelLandscape.text! + "."
+            }
+            
+            
+        }
+ 
+
     }
     
     // Backspace button Action
     @IBAction func BackspaceButton_Pressed(_ sender: UIButton) {
         
-        if(!ResultLabel.text!.isEmpty){
-             if(ResultLabel.text!.count == 1){
-                 // Set DisplayLabel text to "0" as initial display value.
-                 ResultLabel.text = "0"
+        if(UIDevice.current.orientation.isPortrait){
+            if(!ResultLabel.text!.isEmpty){
+                 if(ResultLabel.text!.count == 1){
+                     // Set DisplayLabel text to "0" as initial display value.
+                     ResultLabel.text = "0"
+                     
+                     // Set isFirstTimeLaunch to true again.
+                     isFirstTimeLaunch = true;
+                 }else{
+                     // remove last value from result.
+                     ResultLabel.text?.removeLast()
+                
+                 }
                  
-                 // Set isFirstTimeLaunch to true again.
-                 isFirstTimeLaunch = true;
-             }else{
-                 // remove last value from result.
-                 ResultLabel.text?.removeLast()
-            
              }
-             
-         }
+            
+            
+        }else{
+            if(!ResultLabelLandscape.text!.isEmpty){
+                 if(ResultLabelLandscape.text!.count == 1){
+                     // Set DisplayLabel text to "0" as initial display value.
+                     ResultLabelLandscape.text = "0"
+                     
+                     // Set isFirstTimeLaunch to true again.
+                     isFirstTimeLaunch = true;
+                 }else{
+                     // remove last value from result.
+                     ResultLabelLandscape.text?.removeLast()
+                
+                 }
+                 
+             }
+            
+            
+        }
+        
+ 
     }
     
 
