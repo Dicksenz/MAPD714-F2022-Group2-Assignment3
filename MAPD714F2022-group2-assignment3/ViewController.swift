@@ -22,6 +22,7 @@
 // An Operator stack to store and keep track of operators in order to check for precedence
 
 import UIKit
+import Darwin
 
 // "+/-" -> tag("12")
 // "%" -> tag("13")
@@ -225,6 +226,10 @@ class ViewController: UIViewController {
     // Clear button Action
     @IBAction func ClearButton_Pressed(_ sender: UIButton) {
         
+        while(!globalStack.isEmpty()){
+            globalStack.pop()
+        }
+        
         if(isPortrait){
             // Set result label to "0"
             ResultLabel.text = "0"
@@ -403,6 +408,10 @@ class ViewController: UIViewController {
             
         }
         
+       
+        
+        
+        print(globalStack)
         
    
     }
@@ -478,6 +487,8 @@ class ViewController: UIViewController {
                      ResultLabel.text = ResultLabel.text! + " " + "+" + " "
                      
                  }
+                
+  
 
              default:
                  print("Invalid operand")
@@ -553,6 +564,45 @@ class ViewController: UIViewController {
                      ResultLabelLandscape.text = ResultLabelLandscape.text! + " " + "+" + " "
                      
                  }
+                
+            case 18: // "SIN"
+                
+                if(!isFirstTimeLaunch){
+                    // Get lastvalue in global stack
+                    let lastValue: String = globalStack.peek()
+                    
+                    // Convert value to double
+                    let lastValueToDouble = Double(lastValue)
+                    
+                    // Check if it is an integer
+                    let isInteger = floor(lastValueToDouble!) == lastValueToDouble
+                    
+                    print(lastValue)
+                    
+                    var value = sin(Double(lastValue)! * Double.pi / 180)
+                    value = round(value * 100000000) / 100000000.0
+                   
+                    print(value)
+                    
+                    
+                    // keep removing last character till whitespace is found
+                    for char in ResultLabelLandscape.text!.reversed(){
+                        if(char != " "){
+                            ResultLabelLandscape.text!.removeLast()
+                        }else{
+                            break
+                        }
+                    }
+                    // append new value
+                    ResultLabelLandscape.text = ResultLabelLandscape.text! + String(value)
+                    
+                    globalStack.push(String(value))
+                    
+                    
+                }
+                
+        
+ 
 
              default:
                  print("Invalid operand")
@@ -792,8 +842,10 @@ class ViewController: UIViewController {
                        // check if result is an integer
                        if(isInteger){
                            ResultLabelLandscape.text = String(Int(result))
+                           globalStack.push(String(Int(result)))
                        }else{
                            ResultLabelLandscape.text = String(result)
+                           globalStack.push(String(result))
                        }
                        
                
