@@ -99,29 +99,54 @@ class ViewController: UIViewController {
         ResultLabelLandscape.layer.borderColor=UIColor.white.cgColor
         
         // Listener for device orientation
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
-         
+//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+//
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+   
+          checkDeviceOrientation()
+      }
+      
+      func checkDeviceOrientation()
+      {
+          if UIDevice.current.orientation.isLandscape {
+              print("Device is in landscape mode")
+              isPortrait = false
+              // Swap portrait Result label value to landscape result value
+              ResultLabelLandscape.text = ResultLabel.text
+          } else {
+              print("Device is in portrait mode")
+              isPortrait = true
+              // Swap landscape Result label value to portrait result value
+              ResultLabel.text = ResultLabelLandscape.text
+          }
+      }
+      override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+          
+          checkDeviceOrientation()
+      }
     
     
     
-    deinit {
-       NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
-    }
-
-    @objc func rotated() {
-        if UIDevice.current.orientation.isLandscape {
-            print("Landscape")
-            isPortrait = false
-            // Swap portrait Result label value to landscape result value
-            ResultLabelLandscape.text = ResultLabel.text
-        } else {
-            print("Portrait")
-            isPortrait = true
-            // Swap landscape Result label value to portrait result value
-            ResultLabel.text = ResultLabelLandscape.text
-        }
-    }
+//    deinit {
+//       NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+//    }
+//
+//    @objc func rotated() {
+//        if UIDevice.current.orientation.isLandscape {
+//            print("Landscape")
+//            isPortrait = false
+//            // Swap portrait Result label value to landscape result value
+//            ResultLabelLandscape.text = ResultLabel.text
+//        } else {
+//            print("Portrait")
+//            isPortrait = true
+//            // Swap landscape Result label value to portrait result value
+//            ResultLabel.text = ResultLabelLandscape.text
+//        }
+//    }
     
     // Function to check if string value is an operator then returns true or false
     func isOperator(ch: String) -> Bool{
