@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  File name: MAPD714F2022-group2-assignment2
+//  File name: MAPD714F2022-group3-assignment3
 
 // Authors
 
@@ -10,16 +10,14 @@
 // Name: Mittul Bharatkumar Trivedi
 // StudentID: 301296407
 
-// Date: 2022-10-01
+// Date: 2022-10-19
 
-// App description: Assignment 2 Part 2 - Calculator App - Part 2 - Basic Calculator Functions.
+// App description: Assignment 3 Part 3 - Additional Functions
 
 // Version of Xcode: 14.0 (14A309)
 
 
-// We have used Swift Data Structures: Stack for the calculator logic
-// An Operand stack to store and keep track of operands
-// An Operator stack to store and keep track of operators in order to check for precedence
+
 
 import UIKit
 import Darwin
