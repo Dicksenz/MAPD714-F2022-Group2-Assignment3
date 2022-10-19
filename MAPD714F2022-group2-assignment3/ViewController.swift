@@ -330,7 +330,8 @@ class ViewController: UIViewController {
             }
             
             
-        }else{
+        }
+        else{
             // Landscape codes
             
             if(isFirstTimeLaunch){
@@ -601,9 +602,153 @@ class ViewController: UIViewController {
                     
                 }
                 
-        
- 
+            case 19: // "COS"
+                
+                if(!isFirstTimeLaunch){
+                    // Get lastvalue in global stack
+                    let lastValue: String = globalStack.peek()
+                    
+                    // Convert value to double
+                    let lastValueToDouble = Double(lastValue)
+                    
+                    // Check if it is an integer
+                    let isInteger = floor(lastValueToDouble!) == lastValueToDouble
+                    
+                    print(lastValue)
+                    
+                    var value = cos(Double(lastValue)! * Double.pi / 180)
+                    value = round(value * 100000000) / 100000000.0
+                   
+                    print(value)
+                    
+                    
+                    // keep removing last character till whitespace is found
+                    for char in ResultLabelLandscape.text!.reversed(){
+                        if(char != " "){
+                            ResultLabelLandscape.text!.removeLast()
+                        }else{
+                            break
+                        }
+                    }
+                    // append new value
+                    ResultLabelLandscape.text = ResultLabelLandscape.text! + String(value)
+                    
+                    globalStack.push(String(value))
+                    
+                    
+                }
+                
+            case 20: // "TAN"
+                
+                if(!isFirstTimeLaunch){
+                    // Get lastvalue in global stack
+                    let lastValue: String = globalStack.peek()
+                    
+                    // Convert value to double
+                    let lastValueToDouble = Double(lastValue)
+                    
+                    // Check if it is an integer
+                    let isInteger = floor(lastValueToDouble!) == lastValueToDouble
+                    
+                    print(lastValue)
+                    
+                    var value = tan(Double(lastValue)! * Double.pi / 180)
+                    value = round(value * 100000000) / 100000000.0
+                   
+                    print(value)
+                    
+                    
+                    // keep removing last character till whitespace is found
+                    for char in ResultLabelLandscape.text!.reversed(){
+                        if(char != " "){
+                            ResultLabelLandscape.text!.removeLast()
+                        }else{
+                            break
+                        }
+                    }
+                    // append new value
+                    ResultLabelLandscape.text = ResultLabelLandscape.text! + String(value)
+                    
+                    globalStack.push(String(value))
+                    
+                    
+                }
+                
+            
+            case 21: // "PI"
+                
+                var value = Double.pi
+                value = round(value * 100000000) / 100000000.0
+                
+                if(isFirstTimeLaunch){
+                    ResultLabelLandscape.text = String(value)
+                    isFirstTimeLaunch = false
+                }
+                else{
+                    print(Int(lastString))
+                    if(Int(lastString) != nil){
+                        
+                        ResultLabelLandscape.text = ResultLabelLandscape.text! + " " + "*" + " " + String(value)
+                        
+                    }
+                    else{
+                        ResultLabelLandscape.text = ResultLabelLandscape.text! + String(value)
 
+                        
+                    }
+
+                    
+                }
+   
+                
+            case 22: // X^2
+                
+                if(!isFirstTimeLaunch){
+                    // Get lastvalue in global stack
+                    let lastValue: String = globalStack.peek()
+                    
+                    // Convert value to double
+                    let lastValueToDouble = Double(lastValue)
+                    
+                    // Check if it is an integer
+                    let isInteger = floor(lastValueToDouble!) == lastValueToDouble
+                    
+                    print(lastValue)
+                    
+                    var value = Double(lastValue)! * 2
+                   
+                    print(value)
+                    
+                    
+                    // keep removing last character till whitespace is found
+                    for char in ResultLabelLandscape.text!.reversed(){
+                        if(char != " "){
+                            ResultLabelLandscape.text!.removeLast()
+                        }else{
+                            break
+                        }
+                    }
+                    
+                    // check value is an integer
+                    let isValueInteger = floor(value) == value
+                    
+                    if(isValueInteger){
+                        // append new value
+                        ResultLabelLandscape.text = ResultLabelLandscape.text! + String(Int(value))
+                        
+                    }else{
+                        // append new value
+                        ResultLabelLandscape.text = ResultLabelLandscape.text! + String(value)
+                        
+                    }
+                   
+                    
+                    globalStack.push(String(value))
+                    
+                    
+                }
+               
+       
              default:
                  print("Invalid operand")
              }
