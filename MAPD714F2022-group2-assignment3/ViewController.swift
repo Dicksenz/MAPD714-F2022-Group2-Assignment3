@@ -103,12 +103,17 @@ class ViewController: UIViewController {
 //
     }
     
+    // Resource from
+    //https://www.appsdeveloperblog.com/determine-device-orientation-in-swift/
     override func viewWillAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
    
           checkDeviceOrientation()
       }
-      
+    
+    
+    // Resource from
+    //https://www.appsdeveloperblog.com/determine-device-orientation-in-swift/
       func checkDeviceOrientation()
       {
           if UIDevice.current.orientation.isLandscape {
@@ -123,6 +128,9 @@ class ViewController: UIViewController {
               ResultLabel.text = ResultLabelLandscape.text
           }
       }
+    
+    // Resource from
+    //https://www.appsdeveloperblog.com/determine-device-orientation-in-swift/
       override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
           
           checkDeviceOrientation()
@@ -740,7 +748,7 @@ class ViewController: UIViewController {
                     
                     print(lastValue)
                     
-                    var value = Double(lastValue)! * 2
+                    let value = pow(Double(lastValue)!, 2)
                    
                     print(value)
                     
@@ -759,7 +767,7 @@ class ViewController: UIViewController {
                     
                     if(isValueInteger){
                         // append new value
-                        ResultLabelLandscape.text = ResultLabelLandscape.text! + String(Int(value))
+                        ResultLabelLandscape.text = ResultLabelLandscape.text! + String(Int64(value))
                         
                     }else{
                         // append new value
@@ -767,7 +775,7 @@ class ViewController: UIViewController {
                         
                     }
                    
-                    
+                   // Push last value to global stack
                     globalStack.push(String(value))
                     
                     
